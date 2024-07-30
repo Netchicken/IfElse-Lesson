@@ -32,11 +32,14 @@
             cbxRaining = new CheckBox();
             cbxSunny = new CheckBox();
             cbxCold = new CheckBox();
+            lblRaining = new Label();
+            lblCold = new Label();
+            lblSunny = new Label();
             SuspendLayout();
             // 
             // btnClothing
             // 
-            btnClothing.Location = new Point(143, 32);
+            btnClothing.Location = new Point(176, 23);
             btnClothing.Name = "btnClothing";
             btnClothing.Size = new Size(119, 86);
             btnClothing.TabIndex = 0;
@@ -77,11 +80,41 @@
             cbxCold.UseVisualStyleBackColor = true;
             cbxCold.CheckedChanged += cbxCold_CheckedChanged;
             // 
+            // lblRaining
+            // 
+            lblRaining.AutoSize = true;
+            lblRaining.Location = new Point(123, 33);
+            lblRaining.Name = "lblRaining";
+            lblRaining.Size = new Size(38, 15);
+            lblRaining.TabIndex = 7;
+            lblRaining.Text = "label1";
+            // 
+            // lblCold
+            // 
+            lblCold.AutoSize = true;
+            lblCold.Location = new Point(123, 62);
+            lblCold.Name = "lblCold";
+            lblCold.Size = new Size(38, 15);
+            lblCold.TabIndex = 8;
+            lblCold.Text = "label1";
+            // 
+            // lblSunny
+            // 
+            lblSunny.AutoSize = true;
+            lblSunny.Location = new Point(119, 87);
+            lblSunny.Name = "lblSunny";
+            lblSunny.Size = new Size(38, 15);
+            lblSunny.TabIndex = 9;
+            lblSunny.Text = "label1";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(275, 130);
+            ClientSize = new Size(307, 151);
+            Controls.Add(lblSunny);
+            Controls.Add(lblCold);
+            Controls.Add(lblRaining);
             Controls.Add(cbxCold);
             Controls.Add(cbxSunny);
             Controls.Add(cbxRaining);
@@ -98,5 +131,8 @@
         private CheckBox cbxRaining;
         private CheckBox cbxSunny;
         private CheckBox cbxCold;
+        private Label lblRaining;
+        private Label lblCold;
+        private Label lblSunny;
     }
 }
